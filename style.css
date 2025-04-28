@@ -2,53 +2,98 @@ body{
     margin: 0px;
 }
 header{
-    display: flex;
-    top: 0;
+    display:flex;
+    top:0;
     width: 100%;
-    background-color: rgb(85, 85, 85);
-    justify-content: center;
-    position: fixed;
-}
-nav{
+    background-color: #B97100;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 1;
+    color:white;
     padding: 10px;
 }
 nav a{
     padding: 10px 25px;
     text-decoration: none;
-    color: rgb(255, 136, 0);
+    color: white;
 }
-nav a:hover{
-    color: rgb(0, 0, 0);
-    background-color: coral;
-    transition: 0.2s;
-}
-.home{
-    height: 800px;
-    background: url("pngtreehitam.png");
+section.home{
+    background: url("AulaJepang.jpg");
     background-size: cover;
-    font-size: large;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    padding-top: 100px;
 }
-.home h2{
-    left: 50%;
-    top:50%;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+section.home div{
+    text-align: center;
     color:white;
-
+    margin: auto;
+    width:70%;
+    padding: 20px;
 }
-.about{
-    height: 800px;
-    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(255, 0, 0));
+section.home .welcome{
+    font-size:30px;
 }
-.product{
-    height: 800px;
-    background-image: linear-gradient(180deg, rgb(255, 0, 0), rgb(0, 0, 0));
+section.home a{
+    color:white;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px;
+    border-radius: 20px;
 }
-.contact{
-    height: 800px;
-    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(255, 0, 0));
+section.about{
+    background-image: linear-gradient(180deg, #E6BE7F, #EBCB99);
+    height: 600px;
+    padding-top: 100px;
 }
-.footer{
-    height: 800px;
-    background-image: linear-gradient(180deg, rgb(255, 0, 0), rgb(0, 0, 0));
+section.about div{
+    color:white;
+    text-align: center;
+    margin:auto;
+    width:70%;
+}
+section.about img{
+    height: 200px;
+}
+section.product{
+    background: url("gambarnya");
+    background-image: linear-gradient(180deg, #EBCB99, #F0D8B2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+}
+section.product .container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+section.product .container .card{
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    height: 400px;
+    margin: 15px;
+}
+section.product .container .card img{
+    width:100;
+}
+section.product .container .card a{
+    color:black;
+    padding: 5px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px;
+    border-radius:20px;
+}
+section.contact{
+    background-color: #F0D8B2;
+    background-image: linear-gradient(180deg, #F0D8B2, #B97100);
+    height:600px;
+}
+footer{
+    background-color: #B97100;
+    height: 50px;
 }
