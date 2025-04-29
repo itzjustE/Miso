@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin: 0px;
 }
@@ -24,6 +27,7 @@ section.home{
     background-attachment: fixed;
     height: 600px;
     padding-top: 100px;
+    align-items: center;
 }
 section.home div{
     text-align: center;
@@ -43,7 +47,7 @@ section.home a{
     border-radius: 20px;
 }
 section.about{
-    background-image: linear-gradient(180deg, #E6BE7F, #EBCB99);
+    background: #f5d198;
     height: 600px;
     padding-top: 100px;
 }
@@ -58,11 +62,11 @@ section.about img{
 }
 section.product{
     background: url("gambarnya");
-    background-image: linear-gradient(180deg, #EBCB99, #F0D8B2);
+    background-color: #f5d198;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 600px;
+    height: 1200px;
 }
 section.product .container {
     justify-content: center;
@@ -75,11 +79,11 @@ section.product .container .card{
     text-align: center;
     padding: 5px;
     width: 200px;
-    height: 400px;
+    height: 450px;
     margin: 15px;
 }
 section.product .container .card img{
-    width:100;
+    width:100px;
 }
 section.product .container .card a{
     color:black;
@@ -89,11 +93,72 @@ section.product .container .card a{
     border-radius:20px;
 }
 section.contact{
-    background-color: #F0D8B2;
-    background-image: linear-gradient(180deg, #F0D8B2, #B97100);
+    background-image: linear-gradient(180deg, #f5d198, #B97100);
     height:600px;
+}
+section.contact {
+    background: #f5d198;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact .card {
+    background: #ffffff;
+    margin: auto;
+    color: #333333;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px #00000033;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+section.contact .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 15px 40px #00000055;
+}
+
+section.contact .card img {
+    width: 200px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 footer{
     background-color: #B97100;
     height: 50px;
+}
+footer .medsos{
+    text-align: center;
+    padding-top: 10px;
+}
+footer .medsos a{
+    color:white;
+    font-size: 20px;
+    padding: 5px 20px;
 }
