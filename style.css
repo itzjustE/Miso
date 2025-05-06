@@ -16,6 +16,7 @@ header {
     color: white;
     padding: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 nav a {
@@ -32,7 +33,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 section.home{
-    background:url("AulaJepang.jpg");
+    background:url("backgroundfestival.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -40,6 +41,7 @@ section.home{
     padding-top: 100px;
     align-items: center;
 }
+
 section.home div{
     text-align: center;
     color:white;
@@ -47,9 +49,11 @@ section.home div{
     width:70%;
     padding: 20px;
 }
+
 section.home .welcome{
     font-size:30px;
 }
+
 section.home a{
     color:white;
     padding: 10px 20px;
@@ -57,17 +61,20 @@ section.home a{
     box-shadow: 0px 0px 3px;
     border-radius: 20px;
 }
+
 section.about{
     background: #B97100;
-    height: 450px;
+    height: 600px;
     padding-top: 100px;
 }
+
 section.about div{
     color:white;
     text-align: center;
     margin:auto;
     width:70%;
 }
+
 section.about img {
     width: 200px;
     padding-top: 10px;
@@ -75,6 +82,7 @@ section.about img {
     height: 200px;
     border-radius: 100px;
 }
+
 section.product {
     height: 1400px;
     display: flex;
@@ -84,6 +92,7 @@ section.product {
     position: relative;
     overflow: hidden;
 }
+
 .product video {
     position: absolute;
     right: 0;
@@ -122,6 +131,7 @@ section.product .container .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 section.product .container .card:hover {
@@ -218,6 +228,7 @@ section.contact .card img {
         transform: translateY(-10px);
     }
 }
+
 footer {
     background: linear-gradient(90deg, #B97100, #FFB347);
     height: 60px;
